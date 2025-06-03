@@ -17,7 +17,7 @@ int is_equalContact(Contact a, Contact b)
 	return 0;
 }
 
-void printContact(Contact ct)
+void printContact(Contact ct) //값을 넘기는 구조체
 {
 	printf("이름 : %s\n", ct.name);
 	printf("전번 : %s\n", ct.phone);
@@ -25,7 +25,7 @@ void printContact(Contact ct)
 	printf("연도 : %d\n", ct.year);
 }
 
-int is_equalContactPtr(Contact* a, Contact* b) // pointer
+int is_equalContactPtr(Contact* a, Contact* b) // pointer, 주소를 넘기는 구조체
 {
 	if (a->year == b->year && a->gender == b->gender &&
 		strcmp(a->name, b->name) == 0 &&
